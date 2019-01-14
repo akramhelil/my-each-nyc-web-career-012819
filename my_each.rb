@@ -1,4 +1,9 @@
 def my_each(words) # put argument(s) here
-  my_each(words) do |word|
-    puts word# code here
+i = 0
+while i < words.length
+  yield(words[i])
+  i = i + 1
+
+end
+words
 end
